@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controle de Estoque</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="cliente.html">Clientes</a>
+<a href="produto.html" class="active">Estoque</a>
+</nav>
+
+<div class="container">
+<h1>Controle de Estoque</h1>
+<div class="form-group">
+<input type="text" id="produto-nome" placeholder="Nome do Produto">
+
+<input type="number" id="produto-preco" placeholder="Preço (R$)" step="0.01">
+<input type="number" id="produto-qtd" placeholder="Quantidade em Estoque">
+<button onclick="cadastrarProduto()">Cadastrar Produto</button>
+</div>
+
+<h2>Produtos em Estoque</h2>
+<!-- Div para listagem de produtos -->
+<div id="lista-produtos" class="lista"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
